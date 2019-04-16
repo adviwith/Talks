@@ -1,0 +1,351 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>club</title><link href='night/mermaid.dark.css' rel='stylesheet' type='text/css' />
+<link href='night/codeblock.dark.css' rel='stylesheet' type='text/css' />
+<link href='night/sourcemode.dark.css' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:first-child { margin-top: -20px; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; }
+button, input, select, textarea { color: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 2; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px !important; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { padding-left: 32px; padding-right: 32px; padding-bottom: 0px; break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  @page { margin: 20mm 0px; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="mermaid"] svg, [lang="flow"] svg { max-width: 100%; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+
+
+.cm-s-inner .cm-variable, .cm-s-inner .cm-operator, .cm-s-inner .cm-property { color: rgb(184, 191, 198); }
+.cm-s-inner .cm-keyword { color: rgb(200, 143, 208); }
+.cm-s-inner .cm-tag { color: rgb(125, 244, 106); }
+.cm-s-inner .cm-attribute { color: rgb(117, 117, 228); }
+.CodeMirror div.CodeMirror-cursor { border-left: 1px solid rgb(184, 191, 198); z-index: 3; }
+.cm-s-inner .cm-string { color: rgb(210, 107, 107); }
+.cm-s-inner .cm-comment, .cm-s-inner.cm-comment { color: rgb(218, 146, 74); }
+.cm-s-inner .cm-header, .cm-s-inner .cm-def, .cm-s-inner.cm-header, .cm-s-inner.cm-def { color: rgb(141, 141, 240); }
+.cm-s-inner .cm-quote, .cm-s-inner.cm-quote { color: rgb(87, 172, 87); }
+.cm-s-inner .cm-hr { color: rgb(216, 213, 213); }
+.cm-s-inner .cm-link { color: rgb(211, 211, 239); }
+.cm-s-inner .cm-negative { color: rgb(217, 80, 80); }
+.cm-s-inner .cm-positive { color: rgb(80, 230, 80); }
+.cm-s-inner .cm-string-2 { color: rgb(255, 85, 0); }
+.cm-s-inner .cm-meta, .cm-s-inner .cm-qualifier { color: rgb(183, 179, 179); }
+.cm-s-inner .cm-builtin { color: rgb(243, 179, 248); }
+.cm-s-inner .cm-bracket { color: rgb(153, 153, 119); }
+.cm-s-inner .cm-atom, .cm-s-inner.cm-atom { color: rgb(132, 182, 203); }
+.cm-s-inner .cm-number { color: rgb(100, 171, 143); }
+.cm-s-inner .cm-variable { color: rgb(184, 191, 198); }
+.cm-s-inner .cm-variable-2 { color: rgb(159, 186, 213); }
+.cm-s-inner .cm-variable-3 { color: rgb(28, 198, 133); }
+.CodeMirror-selectedtext, .CodeMirror-selected { background: rgb(74, 137, 220); text-shadow: none; color: rgb(255, 255, 255) !important; }
+.CodeMirror-gutters { border-right: none; }
+
+
+:root { --bg-color: #363B40; --side-bar-bg-color: #2E3033; --text-color: #b8bfc6; --select-text-bg-color:#4a89dc; --control-text-color: #b7b7b7; --control-text-hover-color: #eee; --window-border: 1px solid #555; --active-file-bg-color: rgb(34, 34, 34); --active-file-border-color: #8d8df0; --active-file-text-color: white; --item-hover-bg-color: #70717d; --item-hover-text-color: white; --primary-color: #6dc1e7; --rawblock-edit-panel-bd: #4B535A; }
+html { font-size: 16px; }
+html, body { text-size-adjust: 100%; background: var(--bg-color); fill: currentcolor; }
+#write { max-width: 914px; }
+html, body, button, input, select, textarea, div.code-tooltip-content { color: rgb(184, 191, 198); border-color: transparent; }
+div.code-tooltip, .md-hover-tip .md-arrow::after { background: rgb(75, 83, 90); }
+.popover.bottom > .arrow::after { border-bottom-color: rgb(75, 83, 90); }
+html, body, button, input, select, textarea { font-style: normal; line-height: 1.625rem; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+hr { height: 2px; border: 0px; margin: 24px 0px !important; }
+h1, h2, h3, h4, h5, h6 { font-family: "Lucida Grande", Corbel, sans-serif; font-weight: normal; clear: both; word-wrap: break-word; margin: 0px; padding: 0px; color: rgb(222, 222, 222); }
+h1 { font-size: 2.5rem; line-height: 2.75rem; margin-bottom: 1.5rem; letter-spacing: -1.5px; }
+h2 { font-size: 1.63rem; line-height: 1.875rem; margin-bottom: 1.5rem; letter-spacing: -1px; font-weight: bold; }
+h3 { font-size: 1.17rem; line-height: 1.5rem; margin-bottom: 1.5rem; letter-spacing: -1px; font-weight: bold; }
+h4 { font-size: 1.12rem; line-height: 1.375rem; margin-bottom: 1.5rem; color: white; }
+h5 { font-size: 0.97rem; line-height: 1.25rem; margin-bottom: 1.5rem; font-weight: bold; }
+h6 { font-size: 0.93rem; line-height: 1rem; margin-bottom: 0.75rem; color: white; }
+@media (min-width: 980px) {
+  h3.md-focus::before, h4.md-focus::before, h5.md-focus::before, h6.md-focus::before { color: rgb(221, 221, 221); border: 1px solid rgb(221, 221, 221); border-radius: 3px; position: absolute; left: -1.64286rem; top: 0.357143rem; float: left; font-size: 9px; padding-left: 2px; padding-right: 2px; vertical-align: bottom; font-weight: normal; line-height: normal; }
+  h3.md-focus::before { content: "h3"; }
+  h4.md-focus::before { content: "h4"; }
+  h5.md-focus::before { content: "h5"; top: 0px; }
+  h6.md-focus::before { content: "h6"; top: 0px; }
+}
+a { text-decoration: none; outline: 0px; }
+a:hover { outline: 0px; }
+a:focus { outline: dotted thin; }
+sup.md-footnote { background-color: rgb(85, 85, 85); color: rgb(221, 221, 221); }
+p { word-wrap: break-word; }
+p, ul, dd, ol, hr, address, pre, table, iframe, .wp-caption, .wp-audio-shortcode, .wp-video-shortcode { margin-top: 0px; margin-bottom: 1.5rem; }
+li > blockquote { margin-bottom: 0px; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+.in-text-selection, ::selection { background: rgb(74, 137, 220); color: rgb(255, 255, 255); text-shadow: none; }
+ul, ol { padding: 0px 0px 0px 1.875rem; }
+ul { list-style: square; }
+ol { list-style: decimal; }
+ul ul, ol ol, ul ol, ol ul { margin: 0px; }
+b, th, dt, strong { font-weight: bold; }
+i, em, dfn, cite { font-style: italic; }
+blockquote { margin: 35px 0px 1.875rem 1.875rem; border-left: 2px solid rgb(71, 77, 84); padding-left: 30px; }
+pre, code, kbd, tt, var { background: rgba(0, 0, 0, 0.05); font-size: 0.875rem; font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace; }
+kbd { padding: 2px 4px; font-size: 90%; color: rgb(255, 255, 255); background-color: rgb(51, 51, 51); border-radius: 3px; box-shadow: rgba(0, 0, 0, 0.25) 0px -1px 0px inset; }
+pre.md-fences { padding: 10px 30px; margin-bottom: 20px; border: 1px solid; }
+.md-fences .code-tooltip { bottom: -3.2em; }
+.enable-diagrams pre.md-fences[lang="sequence"] .code-tooltip, .enable-diagrams pre.md-fences[lang="flow"] .code-tooltip, .enable-diagrams pre.md-fences[lang="mermaid"] .code-tooltip { bottom: -2.2em; right: 4px; }
+code, kbd, tt, var { padding: 2px 5px; }
+table { max-width: 100%; width: 100%; border-collapse: collapse; border-spacing: 0px; }
+th, td { padding: 5px 10px; vertical-align: top; }
+a { transition: all 0.2s ease-in-out; }
+hr { background: rgb(71, 77, 84); }
+h1 { margin-top: 2em; }
+a { color: rgb(224, 224, 224); text-decoration: underline; }
+a:hover { color: rgb(255, 255, 255); }
+.md-inline-math script { color: rgb(129, 177, 219); }
+b, th, dt, strong { color: rgb(222, 222, 222); }
+mark { background: rgb(211, 212, 14); }
+blockquote { color: rgb(157, 162, 166); }
+table a { color: rgb(222, 222, 222); }
+th, td { border: 1px solid rgb(71, 77, 84); }
+.task-list { padding-left: 0px; }
+.md-task-list-item { padding-left: 1.25rem; }
+.md-task-list-item > input { top: auto; }
+.md-task-list-item > input::before { content: ""; display: inline-block; width: 0.875rem; height: 0.875rem; vertical-align: middle; text-align: center; border: 1px solid rgb(184, 191, 198); background-color: rgb(54, 59, 64); margin-top: -0.4rem; }
+.md-task-list-item > input:checked::before, .md-task-list-item > input[checked]::before { content: "√"; font-size: 0.625rem; line-height: 0.625rem; color: rgb(222, 222, 222); }
+.CodeMirror-gutters { background: var(--bg-color); border-right: 1px solid transparent; }
+.auto-suggest-container { border: 0px; background-color: rgb(82, 92, 101); }
+#typora-quick-open { background-color: rgb(82, 92, 101); }
+#typora-quick-open input { background-color: rgb(82, 92, 101); border-width: 0px 0px 1px; border-top-style: initial; border-right-style: initial; border-left-style: initial; border-top-color: initial; border-right-color: initial; border-left-color: initial; border-image: initial; border-bottom-style: solid; border-bottom-color: grey; }
+.typora-quick-open-item { background-color: inherit; color: inherit; }
+.typora-quick-open-item.active, .typora-quick-open-item:hover { background-color: rgb(77, 139, 219); color: white; }
+.typora-quick-open-item:hover { background-color: rgba(77, 139, 219, 0.8); }
+.typora-search-spinner > div { background-color: rgb(255, 255, 255); }
+#write pre.md-meta-block { border-bottom: 1px dashed rgb(204, 204, 204); background: transparent; padding-bottom: 0.6em; line-height: 1.6em; }
+.btn, .btn .btn-default { background: transparent; color: rgb(184, 191, 198); }
+.ty-table-edit { border-top: 1px solid gray; background-color: rgb(54, 59, 64); }
+.popover-title { background: transparent; }
+.md-image > .md-meta { color: rgb(187, 187, 187); background: transparent; }
+.md-expand.md-image > .md-meta { color: rgb(221, 221, 221); }
+#write > h3::before, #write > h4::before, #write > h5::before, #write > h6::before { border: none; border-radius: 0px; color: rgb(136, 136, 136); text-decoration: underline; left: -1.4rem; top: 0.2rem; }
+#write > h3.md-focus::before { top: 2px; }
+#write > h4.md-focus::before { top: 2px; }
+.md-toc-item { color: rgb(168, 194, 220); }
+#write div.md-toc-tooltip { background-color: rgb(54, 59, 64); }
+.dropdown-menu .btn:hover, .dropdown-menu .btn:focus, .md-toc .btn:hover, .md-toc .btn:focus { color: white; background: black; }
+#toc-dropmenu { background: rgba(50, 54, 59, 0.93); border: 1px solid rgba(253, 253, 253, 0.15); }
+#toc-dropmenu .divider { background-color: rgb(155, 155, 155); }
+.outline-expander::before { top: 2px; }
+#typora-sidebar { box-shadow: none; border-right: none; }
+.sidebar-tabs { border-bottom: 0px; }
+#typora-sidebar:hover .outline-title-wrapper { border-left: 1px dashed; }
+.outline-title-wrapper .btn { color: inherit; }
+.outline-item:hover { border-color: rgb(54, 59, 64); background-color: rgb(54, 59, 64); color: white; }
+h1.md-focus .md-attr, h2.md-focus .md-attr, h3.md-focus .md-attr, h4.md-focus .md-attr, h5.md-focus .md-attr, h6.md-focus .md-attr, .md-header-span .md-attr { color: rgb(140, 142, 146); display: inline; }
+.md-comment { color: rgb(90, 149, 227); opacity: 1; }
+.md-inline-math g, .md-inline-math svg { stroke: rgb(184, 191, 198) !important; fill: rgb(184, 191, 198) !important; }
+[md-inline="inline_math"] { color: rgb(156, 178, 233); }
+#math-inline-preview .md-arrow::after { background: black; }
+.modal-content { background: var(--bg-color); border: 0px; }
+.modal-title { font-size: 1.5em; }
+.modal-content input { background-color: rgba(26, 21, 21, 0.51); color: white; }
+.modal-content .input-group-addon { background-color: rgba(0, 0, 0, 0.17); color: white; }
+.modal-backdrop { background-color: rgba(174, 174, 174, 0.7); }
+.modal-content .btn-primary { border-color: var(--primary-color); }
+.md-table-resize-popover { background-color: rgb(75, 83, 90); }
+.form-inline .input-group .input-group-addon { color: white; }
+#md-searchpanel { border-bottom: 1px dashed grey; }
+.context-menu, #spell-check-panel, #footer-word-count-info { background-color: rgb(66, 70, 74); }
+.context-menu.dropdown-menu .divider, .dropdown-menu .divider { background-color: rgb(119, 119, 119); }
+footer { color: inherit; }
+@media (max-width: 1000px) {
+  footer { border-top: none; }
+  footer:hover { color: inherit; }
+}
+#file-info-file-path .file-info-field-value:hover { background-color: rgb(85, 85, 85); color: rgb(222, 222, 222); }
+.megamenu-content, .megamenu-opened header { background: var(--bg-color); }
+.megamenu-menu-panel h2, .megamenu-menu-panel h1, .long-btn { color: inherit; }
+.megamenu-menu-panel input[type="text"] { background: inherit; border-width: 0px 0px 1px; border-top-style: initial; border-right-style: initial; border-left-style: initial; border-color: initial; border-image: initial; border-bottom-style: solid; }
+#recent-file-panel-action-btn { background: inherit; border: 1px solid grey; }
+.megamenu-menu-panel .dropdown-menu > li > a { color: inherit; background-color: rgb(47, 53, 58); text-decoration: none; }
+.megamenu-menu-panel table td:nth-child(1) { color: inherit; font-weight: bold; }
+.megamenu-menu-panel tbody tr:hover td:nth-child(1) { color: white; }
+.modal-footer .btn-default, .modal-footer .btn-primary, .modal-footer .btn-default:not(:hover) { border: 1px solid transparent; }
+.btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default { color: white; border: 1px solid rgb(221, 221, 221); background-color: inherit; }
+.modal-header { border-bottom: 0px; }
+.modal-footer { border-top: 0px; }
+#recent-file-panel tbody tr:nth-child(2n-1) { background-color: transparent !important; }
+.megamenu-menu-panel tbody tr:hover td:nth-child(2) { color: inherit; }
+.megamenu-menu-panel .btn { border: 1px solid rgb(238, 238, 238); background: transparent; }
+.mouse-hover .toolbar-icon.btn:hover, #w-full.mouse-hover, #w-pin.mouse-hover { background-color: inherit; }
+.typora-node::-webkit-scrollbar { width: 5px; }
+.typora-node::-webkit-scrollbar-thumb:vertical { background: rgba(250, 250, 250, 0.3); }
+.typora-node::-webkit-scrollbar-thumb:vertical:active { background: rgba(250, 250, 250, 0.5); }
+#w-unpin { background-color: rgb(65, 130, 196); }
+#top-titlebar, #top-titlebar * { color: var(--item-hover-text-color); }
+.typora-sourceview-on #toggle-sourceview-btn, #footer-word-count:hover, .ty-show-word-count #footer-word-count { background: rgb(51, 51, 51); }
+#toggle-sourceview-btn:hover { color: rgb(238, 238, 238); background: rgb(51, 51, 51); }
+.on-focus-mode .md-end-block:not(.md-focus):not(.md-focus-container) * { color: rgb(104, 104, 104) !important; }
+.on-focus-mode .md-end-block:not(.md-focus) img, .on-focus-mode .md-task-list-item:not(.md-focus-container) > input { }
+.on-focus-mode li[cid]:not(.md-focus-container) { color: rgb(104, 104, 104); }
+.on-focus-mode .md-fences.md-focus .CodeMirror-code > :not(.CodeMirror-activeline) *, .on-focus-mode .CodeMirror.cm-s-inner:not(.CodeMirror-focused) * { color: rgb(104, 104, 104) !important; }
+.on-focus-mode .md-focus, .on-focus-mode .md-focus-container { color: rgb(255, 255, 255); }
+.on-focus-mode #typora-source .CodeMirror-code > :not(.CodeMirror-activeline) * { color: rgb(104, 104, 104) !important; }
+#write .md-focus .md-diagram-panel { border: 1px solid rgb(221, 221, 221); margin-left: -1px; width: calc(100% + 2px); }
+#write .md-focus.md-fences-with-lineno .md-diagram-panel { margin-left: auto; }
+.md-diagram-panel-error { color: rgb(241, 144, 142); }
+.active-tab-files #info-panel-tab-file, .active-tab-files #info-panel-tab-file:hover, .active-tab-outline #info-panel-tab-outline, .active-tab-outline #info-panel-tab-outline:hover { color: rgb(238, 238, 238); }
+.sidebar-footer-item:hover, .footer-item:hover { background: inherit; color: white; }
+.ty-side-sort-btn.active, .ty-side-sort-btn:hover, .selected-folder-menu-item a::after { color: white; }
+#sidebar-files-menu { border: 1px solid; box-shadow: rgba(0, 0, 0, 0.79) 4px 4px 20px; background-color: var(--bg-color); }
+.file-list-item { border-bottom: none; }
+.file-list-item-summary { opacity: 1; }
+.file-list-item.active:first-child { border-top: none; }
+.file-node-background { height: 32px; }
+.file-library-node.active > .file-node-content, .file-list-item.active { color: var(--active-file-text-color); }
+.file-library-node.active > .file-node-background { background-color: var(--active-file-bg-color); }
+.file-list-item.active { background-color: var(--active-file-bg-color); }
+#ty-tooltip { background-color: black; color: rgb(238, 238, 238); }
+.md-task-list-item > input { margin-left: -1.3em; margin-top: 0.3rem; -webkit-appearance: none; }
+.md-mathjax-midline { background-color: rgb(87, 97, 107); border-bottom: none; }
+footer.ty-footer { border-color: rgb(101, 101, 101); }
+
+
+
+
+
+ .typora-export li, .typora-export p, .typora-export,  .footnote-line {white-space: normal;} 
+</style>
+</head>
+<body class='typora-export os-windows' >
+<div  id='write'  class = 'is-node'><h1><a name='header-n0' class='md-header-anchor '></a>Talks</h1><blockquote><p><strong>Summery</strong></p><ol start='' ><li>사이트 공개일은 2학기 축제때,</li><li>인터뷰 대상자를 2, 3학년을 포함해서 늘리기</li><li>포스터는 일정대로 제작하고 2학기에 축제 이후로 게시</li><li>추적조사는 3학년 2~4명, 2학년 1?명(아직 고민중)</li><li>축제준비는 잘 하고 있으니 그대로 가되, 홍보용 이벤트같은거만 축제준비 부서 활동이랑 별개로 네가 하나 만들어서 운영하면 좋겠음</li><li>UCC는 일단 맡김, 원하는대로 한번 만들어보면 좋겠음</li></ol></blockquote><p>지금 현 동아리 학생기업 With를 기업이라고 가정하면</p><p>이 기업의 목표는 기업이 운영하는 플랫폼(학생기업 with 사이트)를 성장시키는거고,</p><p>단기적으로는 인지도를 높여서 사용자를 끌어모으는거라고 할 수 있지.</p><p>&nbsp;</p><p>그럼 동아리 운영 목표를 성공적인 목표(인지도 상승)의 달성이라고 한다면.</p><p>사이트를 가장 소비자에게 매력적으로 만들어서 퍼트려야 한다고 생각해.</p><p>아쉽게도 지금 당장 상황은 그게 될 수 있는 상황은 아니고, 사이트 자체도 많이 미흡한 상황이야</p><p>&nbsp;</p><p>그러므로 지금은 <strong>사이트 내부에 들어갈 내용들을 채우는 것</strong>에 집중할거야</p><p>사이트에 올라갈 내용은 현재 기준으로 인터뷰, 설문조사, 입시 정보 제공 사이트 소개(대학어디가 등), 입시 관련 대학 공지사항 정리</p><p>이렇게 4가지로 나뉘어, 물론 추적조사같은데도 페이지는 만들어둘거야. 당장 올라갈 정보가 없을뿐</p><p>&nbsp;</p><p>이중에 &#39;입시 정보 제공 사이트 소개&#39;는 대학어디가 같은 꽤 괜찮은 사이트들을 간단한 설명과 함께 소개해줄거야, 내 생각보다 엄청 많은 애들이 이런 사이트들을 잘 모르고 있더라고, 당장은 내가 그냥 슥슥 방학동안 찾고 적어보려고.</p><p>&nbsp;</p><h3><a name='header-n31' class='md-header-anchor '></a>입시 관련 대학 공지사항 정리 (url 수집)</h3><p>&#39;입시 관련 대학 공지사항 정리&#39;는 지금까지 엄청나게 이야기를 많이 했었던 &#39;url 수집&#39;이야, 처음에는 그냥 애들한테 시켜서 자동화를 좀 할까 생각을 했었는데, 당장 보니까 정보의 정리라던지 수집 방법 등에서 수정을 좀 거쳐야 할 것 같고, 나도 그러고 싶어.</p><p>근데 지금 너희한테 수집하라고 해 버리면 자료가 모여지고, 규격화가 되어버리니까 뭔가를 바꾸려면 코스트가 너무 들거야. 그렇기 때문에 일단 당분간은 url은 스톱, 수집 활동은 안할거야.</p><p>&nbsp;</p><p>요즘 이래저래 생각하고 설계하고 있는 것들이 완성되면, 정보 수집 과정에서의 비효율적인 부분들을 엄청 줄일 수 있을거라 생각해. 최초 정보수집은 방학동안 시간 있는 애들 5명쯤 모여서 다같이 한 2~3시간 작업하면 끝낼 수 있을거같고, 그 다음부터는 프로그램을 이용해, 반복작업부분을 자동화시켜서 알아서 수집해서 업로드하게 만들 생각이야. </p><p>&nbsp;</p><p>이 사이트에서 가장 중요한 부분중 하나가 입시 공지사항이잖아? 그런데 그 부분이 빈약해서 처음 사이트를 방문한 애들이 사이트에 가지는 인식이 안좋게 박히는건 피해야겠지, </p><p>근데 지금 당장 상황을 보니, 애들 막 일 시키면서 만들어봐야 뭐가 제대로 될 거 같지는 않아.</p><p>그래서 일정을 미뤘고, 여유가 생겼으니 당분간 적어도 너랑 동아리 애들은 이쪽 관련해서 고려할 필요 없어.</p><p>나중에 방학때 몇명만 나랑 같이 하루정도 일하던가, 아니면 그것도 안하고 할 수 있을지도 모르고.</p><p>&nbsp;</p><p>&nbsp;</p><p>그럼 이제 다른쪽 이야기도 해야겠지.</p><h3><a name='header-n44' class='md-header-anchor '></a>포스터</h3><p>지금 사이트 공개가 미뤄졌잖아? 그러니 당장 포스터를 만들어 붙여봐야 의미는 없겠지.</p><p>그래서 포스터 붙이는걸 아에 사이트 공개 이후인 2학기로 미루려고,</p><p>2학기에 축제때 처음 사이트 릴리즈를 하고, 이후 한 1.5개월마다 포스터 하나씩 붙이는거지</p><p>이게 훨씬 지금상황에서는 나을거라 생각해,</p><p>&nbsp;</p><h3><a name='header-n50' class='md-header-anchor '></a>설문조사</h3><p>포스터가 저렇게 바뀌니 설문조사 내용도 약간의 수정이 들어가야겠지</p><p>왜냐하면 우리가 설문조사를 하는 이유는 학생들의 입시 관련 인식을 보기 위함도 있지만, 우리가 한 마케팅의 효과를 보려고 하는게 1번이잖아. 그걸 생기부에 쓸거고.</p><p>그러니까 설문조사는 1학기에 1~2번은 우리 동아리 관련 문항들은 없이 진행하고</p><p>2학기에 2번은 우리 동아리 문항을 같이 넣어서 진행하자.</p><p>이렇게 하면 생활기록부 내용은 챙기면서 변화된 요소에 대한 대응도 될 것 같아.</p><blockquote><p>그냥 지금 든 잡생각인데, 동아리 축제때 설문조사 하라고 뿌리고, 가장 첫번째 문항에 학번이름 적으라고 해서, 설문조사 한 사람들 선착순 n명한테 사은품준다고 하면 좋을거같기도 아닌거같기도.</p><p>대상자 확인은 첫문항에 학번이름적은게 온라인으로 설문조사 결과에서 확인 가능하니까, 확인하고 수령자명단에 적어서 제외하면 되겠지.</p></blockquote><p>&nbsp;</p><h3><a name='header-n60' class='md-header-anchor '></a>인터뷰</h3><p>인터뷰 부서가 인원이 늘어났지? 아마 한명정도 더 늘어날지도 모른다고 생각하고있고,</p><p>아무리 애들이 참여가 열정적이지 않다고 해도, 인원이 많으니까 좀 더 많은 사람을 인터뷰해도 될거라고 생각해</p><p>사이트의 내용을 조금이라도 더 풍부하게 채우고 싶은 욕심도 있고, 그래야만 좀 우리 활동이 있어보여서 내년에 지속되기에도 좋을거같아.</p><p>졸업생은 내가 2~4명 섭외할게, </p><p>재학생중에서도 2, 3학년 각 2명정도? 할 수 있었으면 좋겠어, 섭외 관련한 이야기는 차차 더 해보자 (내가 저번에 듣기에 섭외할 수 있는 애들이 있었다고 했었던거같은데 잘은 기억 안나네 다시 좀 알려줘)</p><p>그런데 저번에 네가 말해줬듯이 잘 하는 애들과 비교적 덜 잘할 애들이 있으니까, 좀 더 신경써줘야 하는 졸업생 인터뷰에는 열심히 하는 애들 보내주고, 덜 신경써도 되는 재학생 인터뷰에는.. 누구 보내는지 알겠지? ㅎㅎ.</p><p>열심히하는애 2명이였나 그 둘한테 2명넘게 맡겨질지도 모르지만, 졸업생같은 경우는 1학기에 2명잡고 방학중에 가능하다면 2명잡을 예정이라 부담은 적을거같아. 이부분은 내가 그 둘이랑 협의하던지 해서 피해 안가게 조정할 생각이야.</p><p>인터뷰는 구글 설문지를 인터뷰용으로 만들어서 애들이 거기에다가 바로 타이핑해 넣을 수 있도록 만들 생각이야, 따로 문서로 보고할 필요도 없고, 사람별로 쉽게 분류할 수 있으니까.</p><p>&nbsp;</p><h3><a name='header-n70' class='md-header-anchor '></a>추적조사</h3><p>추적조사부서는 어쩔수없이 중간이후부터 시작하겠지.</p><p>지금 봐주는 애들중에서 한두명 3학년 넣어줄거고, 개인적으로 3학년 이과도 있었으면 좋겠다고 생각하는데 이부분은 너랑 <em>중간고사 이후</em>에 한번 이야기를 해 보자.</p><p>2학년도 한명 시험적으로 해볼까 생각도 하고는 있어(이 경우는 문항의 양상이 많이 달라질수도 있겠지(모의고사 성적이 빠진다던가))</p><p>추적조사는 인터뷰랑 비슷하게 구글 설문지를 통해 바로 타이핑해 넣게 할 생각이지만, 좀 다른건 조사하는 학생별로 설문지 페이지를 한개씩 만들거야, 정보가 계속 저장될거니까.</p><p>추적조사는 한달에 한번, 방학중에도 할 생각이야. (최대한 부담되지 않게 조율하려고 생각중이고)</p><p>&nbsp;</p><h3><a name='header-n77' class='md-header-anchor '></a>축제준비</h3><p>축제준비는 뭐 사실 그렇게 걱정하지는 않아.</p><p>그냥 재미있는 축제 만들어주면 좋겠고, 너희들끼리 잘 즐길 수 있고, 추억으로 남을 축제만 만들면 된다고 생각해</p><p>한가지 중요한건 홍보 활동 하나정도는 잘 만들어서 넣어줬으면 좋겠어</p><p>이벤트 운영할 부스 하나 만들어서, 아까 위에서 적었던 설문조사지 이벤트라던지 / 부스에서 하는 동아리 사이트 방문해서 어떤 내용 찾으면 상품준다던지(이 경우는 미리 준비해놓고, 찾은 내용을 읽어달라하고 맞으면 상품주면 되겠지 - 좀 스피드퀴즈처럼?)하면 좋을거같기도 하고. [지금 여기에 적어놓은 아이디어는 나한테 나중에 더 물어보면 자세히 설명해줄게, 운영법까지 생각은 지금 했는데 적기는 뭐한거 같다]</p><p>다른 활동은 동아리 취지같은거 안넣어도 되고, 이벤트같은걸로 홍보할 하나만 넣고, 애들 생기부엔 축제 넣고 싶다고 하면 그쪽 내용이랑, 자기가 운영한 부스 내용을 원하면 넣어주던지 하면 될거같아.</p><p>&nbsp;</p><hr /><h3><a name='header-n85' class='md-header-anchor '></a>이번 동아리시간.</h3><figure><table><thead><tr><th>부서</th><th>할 일</th></tr></thead><tbody><tr><td>추적조사</td><td>설문조사에 넣을만한 질문 만들기 (겹치지 않게 10문항, 애들한테 물어보고 싶은 것)</td></tr><tr><td>인터뷰</td><td>인터뷰할 때 할 질문들 만들기 (2인 1조로, 한명씩 맡아서 질문 10문항씩)</td></tr><tr><td>포스터</td><td>포스터 만들기 (급할건 없고, 하던대로 하면 됨)</td></tr><tr><td>축제준비</td><td>축제계획세우기 (되도록 과정별로 자세하게)</td></tr><tr><td>UCC</td><td>팀장이랑 팀원들 협의해서 향후 방향 결정</td></tr></tbody></table></figure><p>추적조사부서에서 만들 설문조사 문항은 기본적으로 만든것들을 제공해주고 추가로 더 넣을 문항을 만드는 것임, 딱히 격식차릴 필요는 없고 실제로 학생들에게 물어봤으면 싶은것들 만들기</p><p>인터뷰부서는 인터뷰 대상에 대한 기본적인 정보는 알려줄테니, 그 정보를 바탕으로 문항 만들기</p><p>포스터는 그림으로 직접 그릴꺼면, 스캔해서 인쇄하고, 그래픽 툴로 그릴꺼면 파일가지고 인쇄하면 됨</p><p>축제준비는 </p></div>
+</body>
+</html>
